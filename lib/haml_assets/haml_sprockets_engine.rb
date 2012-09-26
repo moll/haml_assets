@@ -3,10 +3,6 @@ require 'tilt'
 
 module HamlAssets
   class HamlSprocketsEngine < Tilt::Template
-    def self.default_mime_type
-      'application/javascript'
-    end
-
     module ViewContext
       attr_accessor :output_buffer
 
